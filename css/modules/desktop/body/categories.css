@@ -1,0 +1,64 @@
+@import url("css/modules/mobile/tablets/body/m-categories.css");
+
+/* CATEGORIES SECTION */
+/*====================================*/
+
+.categories-sect {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 100px 0px;
+}
+
+.categorie {
+    position: relative;
+    width: 100%;
+    min-width: 220px;
+    margin: 0px 4%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+.categorie .img {
+    width: 130%;
+    height: 350px;
+    background-image: url("img/close-up-futuristic-sneakers.jpg");
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.categorie .img>img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.categ-description {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #2226;
+    color: var(--color-white);
+}
+
+.categ-description h4 {
+    font-weight: 100;
+}
+
+.desc-underline {
+    width: 25px;
+    height: 5px;
+    background-color: var(--color-white);
+    margin: 15px 0px 50px 0px;
+}
+
+.link {
+    color: var(--color-white);
+}

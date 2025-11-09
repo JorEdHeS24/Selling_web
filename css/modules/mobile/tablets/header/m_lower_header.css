@@ -1,0 +1,42 @@
+@media screen and (max-width: 770px){
+   /* LOW HEADER */
+    /*====================================*/
+    
+    .low-header {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+        display: none;
+    }
+    
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        margin: 100px 0px;
+    }
+    
+    .nav-item {
+        display: flex;
+        margin: 40px;
+        text-decoration: none;
+        z-index: 50;
+    }
+    
+    .nav-item li {
+        list-style: none;
+        color: var(--color-black);
+    }
+    
+    .nav-item li:hover {
+        color: var(--color-primary);
+    }
+    
+
+}       
+    
+ 

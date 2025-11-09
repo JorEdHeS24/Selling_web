@@ -1,0 +1,105 @@
+/*////////////////////////////////////////////////*/
+/* FOOTER  */
+/*////////////////////////////////////////////////*/
+
+footer {
+    width: 100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    max-width: 100%;
+    margin: 0px 2%;
+    padding: 50px 0px;
+}
+
+.footer-logo {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.footer-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.footer-legend a {
+    text-decoration: none;
+    color: #000;
+    opacity: .8;
+}
+
+.footer-legend a:hover {
+    text-decoration: none;
+    color: #000;
+    opacity: .4;
+}
+
+.footer-legend a h5 {
+    margin: 20px 0px;
+    font-size: 100;
+}
+
+/* EMAIL US */
+
+.email-us {
+    width: 100%;
+    padding-top: 10px;
+    margin: 5px 0px;
+}
+
+.email-us h2 {
+    padding: 10px 0px;
+    margin-left: 10px;
+    margin: 3px;
+    font-size: 30px;
+
+}
+
+.s-email {
+    margin: 5px 0px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.email-us button {
+    background-color: transparent;
+    margin: 20px 0px;
+    padding: 10px 40px;
+}
+
+.email-us>button:hover {
+    border: 1px solid black;
+    background-color: var(--color-antiquewhite);    
+    color: black;
+    font-weight: bold;
+}
+.email-us>button:active {
+    color: var(--active-button-font);
+
+}
+
+
+/* UNDER FOOTER */
+/*====================================*/
+
+.under-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: antiquewhite;
+    opacity: .8;
+}
+
+.under-footer h5 {
+    padding: 20px 0px;
+}

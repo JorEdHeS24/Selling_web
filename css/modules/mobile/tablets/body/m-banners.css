@@ -1,0 +1,19 @@
+
+
+@media screen and (max-width: 770px){
+
+    .product-banner>.product-buy{
+        padding-bottom: 20px;
+    }
+
+    .product-banner:nth-child(2){
+        margin-top: 20px;          
+    }
+
+    .product-banner>.banner-img{
+        display: none;
+        position: absolute;
+        
+        
+    }
+}

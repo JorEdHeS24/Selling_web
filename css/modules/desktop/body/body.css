@@ -1,0 +1,89 @@
+@import url("products.css");
+@import url("banners.css");
+@import url("categories.css");
+@import url("about.css");
+
+
+/*////////////////////////////////////////////////*/
+/* BODY */
+/*////////////////////////////////////////////////*/
+
+main {
+    width: 100%;
+    /* height: 120%; */
+    display: block;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* MAIN SECTION*/
+/*====================================*/
+
+.main-sect {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.main-sect {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.back-image {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/date-shopping-mall_329181-1734.jpg?t=st=1740457854~exp=1740461454~hmac=fd9a9330a975366d8337f1218d92d13d546b074d64dc6a68c5252aa882d56bbd&w=1380");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
+}
+
+.fs-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-overlay-dark);
+    z-index: 10;
+}
+
+.fs-content h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: var(--color-white);
+}
+
+.fs-content button {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid var(--color-white);
+    font-size: 17px;
+    background-color: var(--color-transparent);
+    color: var(--color-white);
+
+}
+.fs-content button:hover {
+    border: 1px solid black;
+    background-color: var(--color-antiquewhite);    
+    color: black;
+    font-weight: bold;
+}
+.fs-content button:active {
+    color: var(--active-button-font);
+
+}
+
+
+
+
+
+
+

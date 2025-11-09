@@ -1,0 +1,123 @@
+/* ABOUT SECTION */
+/*====================================*/
+
+.about-section {
+    padding: 100px 0px;
+    background-color: var(--color-antiquewhite);
+}
+
+.about-sect {
+    background-color: var(--color-antiquewhite);
+    margin-top: 100px;
+    width: 100%;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.about-title h2 {
+    margin: 30px;
+}
+
+.about-title h3 {
+    color: var(--color-primary);
+    font-size: 100;
+}
+
+/* GALLERY SECT */
+
+.gallery-sect {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.gallery-img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-1, .img-3, .img-5 {
+    width: 100%;
+    height: 220px;
+    background-image: url("img/close-up-futuristic-sneakers-wbgr.png");
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-2, .img-4 {
+    width: 100%;
+    height: 220px;
+    background-image: url("img/close-up-futuristic-sneakers.jpg");
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-description {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.socials-links a {
+    display: none;
+}
+
+.socials-links:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-links a {
+    color: var(--color-white);
+    margin: 10px 0px;
+}
+
+.img-description:hover {
+    background-color: var(--color-black);
+    opacity: var(--opacity-50);
+}
+
+/*ADVANTAGES SECTION*/
+
+.advantages-sect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 300px;
+    padding-bottom: 20px;
+}
+
+.advantage {
+    display: flex;    
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.overline {
+    width: 25px;
+    height: 3px;
+    margin-top: 50px;
+    background-color: var(--color-black);
+}
+
+.advantages-sect h3 {
+    margin: 30px;
+}

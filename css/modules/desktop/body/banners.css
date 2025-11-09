@@ -1,0 +1,51 @@
+/* BANNERS SECTION*/
+/*====================================*/
+
+.banners-section {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banners-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.products-banners {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* BANNER */
+
+.product-banner {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.banner-img {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.product-buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-beige);
+}
+
+.product-buy img {
+    width: 60%;
+}

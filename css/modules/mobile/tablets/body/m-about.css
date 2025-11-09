@@ -1,0 +1,17 @@
+@media screen and (max-width: 770px){
+    .gallery-sect {
+        display: flex;
+
+    }
+    .gallery-img:nth-child(2n) {
+        display: none;
+    }
+
+    /* .advantages-sect {
+         flex-wrap: wrap;
+    }
+
+    .advantage {
+    }
+     */
+}

@@ -16,7 +16,11 @@
     --color-overlay-dark: #0006;
     --color-overlay-medium: #0004;
     --color-overlay-light: #0002;
+    --color-overlay-black: #022a;
     
+    /* font colors */
+    --active-button-font: #842;
+
     /* Opacity variants */
     --opacity-80: 0.8;
     --opacity-50: 0.5;

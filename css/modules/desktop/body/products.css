@@ -1,0 +1,139 @@
+/* PRODUCTS SECTION*/
+/*====================================*/
+
+/* TITLE */
+
+.products-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: var(--color-whitesmoke);
+    padding: 50px 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 70px 0px 0px 0px;
+}
+
+.title h2 {
+    margin: 50px 0px 0px 0px;
+    color: var(--color-black);
+}
+
+.title-underline {
+    display: flex;
+    justify-content: center;
+    height: 4px;
+    background-color: var(--color-black);
+    width: 20px;
+    margin: 50px 0px;
+}
+
+/* CAROUSEL */
+
+.products-carousel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    margin: 0 5%;
+}
+
+.product-item {
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 50px 1%;
+    display: block;
+}
+
+.item-photo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.item-photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.sold-tag {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-white);
+    width: 115px;
+    height: 30px;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    font-weight: bold;
+}
+
+.check-tag {
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-beige);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.item-photo:hover .check-tag {
+    bottom: 0;
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+}
+
+/* ACTION BUTTON */
+
+.action-button {
+    padding: 20px 60px;
+    font-size: 20px;
+    background-color: var(--color-transparent);
+    margin: 50px 0px 100px 0px;
+    color: black;
+}
+.action-button:hover {
+    background-color: var(--color-overlay-black);
+    font-weight: bold;
+    color:white ;
+}
+.action-button:active {
+    color:var(--color-overlay-dark);
+}
