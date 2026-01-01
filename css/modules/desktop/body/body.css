@@ -14,7 +14,7 @@ main {
     display: block;
     position: relative;
     max-width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* MAIN SECTION*/
@@ -36,11 +36,17 @@ main {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url("https://img.freepik.com/free-photo/date-shopping-mall_329181-1734.jpg?t=st=1740457854~exp=1740461454~hmac=fd9a9330a975366d8337f1218d92d13d546b074d64dc6a68c5252aa882d56bbd&w=1380");
+    background-image: url("img/imagen_publicitaria");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     will-change: transform;
+    
+}
+.back-image img{
+    width: 100%;
+    object-fit: cover;
+    
 }
 
 .fs-content {

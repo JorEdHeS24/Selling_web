@@ -1,64 +1,121 @@
-@import url("css/modules/mobile/tablets/body/m-categories.css");
-
 /* CATEGORIES SECTION */
 /*====================================*/
 
 .categories-sect {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 100px 0px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 100%;
+    margin: 80px 2%;
+    overflow: auto;
 }
+
 
 .categorie {
     position: relative;
     width: 100%;
-    min-width: 220px;
-    margin: 0px 4%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-
-.categorie .img {
-    width: 130%;
-    height: 350px;
-    background-image: url("img/close-up-futuristic-sneakers.jpg");
-    background-size: 200%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.categorie .img>img{
+    height: 100%;
     min-width: 100%;
-    min-height: 100%;
+    overflow: hidden;
+    background-color: var(--color-whitesmoke);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
+
+
+.categorie .cat_img {
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    min-width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: transform 0.7s ease;
+}
+
+.categorie .cat_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
 
 .categ-description {
-    display: flex;
     position: absolute;
+    inset: 0;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: #2226;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.32);
     color: var(--color-white);
+    z-index: 2;
+    text-align: center;
 }
 
 .categ-description h4 {
-    font-weight: 100;
+    font-weight: 300;
+    margin: 0 0 8px 0;
+    font-size: 1.4rem;
 }
 
 .desc-underline {
-    width: 25px;
-    height: 5px;
+    width: 40px;
+    height: 6px;
     background-color: var(--color-white);
-    margin: 15px 0px 50px 0px;
+    margin: 12px 0 18px 0;
+    border-radius: 3px;
 }
 
 .link {
     color: var(--color-white);
+    text-decoration: underline;
 }
+
+/* Hover / focus interactions */
+.categorie:hover .cat_img,
+.categorie:focus-within .cat_img {
+    transform: scale(1.06);
+}
+
+.categorie:hover .cat_img > img,
+.categorie:focus-within .cat_img > img {
+    transform: scale(1.06);
+}
+
+/* Responsive */
+@media (min-width: 1200px) {
+    .categories-sect {
+        gap: 32px;
+        margin: 100px 4%;
+    }
+    .categorie {
+        height: 420px;
+    }
+}
+
+@media (max-width: 770px) {
+    .categories-sect {
+        margin: 40px 4%;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .categorie {
+        height: 280px;
+        border-radius: 6px;
+    }
+    .categ-description h4 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+

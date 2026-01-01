@@ -1,4 +1,4 @@
-// Efecto parallax simple
+// Efecto parallax
 window.addEventListener('scroll', function() {
     const scrolled = window.scrollY;
     const backImage = document.querySelector('.back-image');
